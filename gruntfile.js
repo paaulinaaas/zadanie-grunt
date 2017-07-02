@@ -17,7 +17,7 @@ module.exports = function(grunt) {
   				dest: 'images/build/'
   			}]
   		}
-  	}
+  	},
 
 		watch: {
 			css: {
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.registerTask('default',['sass', 'imagemin', 'watch']); /*taski ktore maja sie odpalic: 1. zamiana css na sassa i 2 watch*/
